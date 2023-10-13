@@ -3,31 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/11420/11420597.png">
-    <title>Week01</title>
+    <title>input과 form</title>
 </head>
 
 <body>
-    <h1>자기소개</h1><!--제목 태그/가장 크게-->
-    <hr color="purple">
-    <p>
-        <h2>기본 정보</h2><!--소 제목 태그(대제목보다 작게)-->
-        <div class="content">이름: 남민주 (Minju Nam)</div>
-        <div class="content"  title="동국">학교:<!--title로 마우스over시 글씨 출력-->
-            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMThfMjMy%2FMDAxNjM3MjA3OTM0NzAz.C9Fo8sj6gjj0pffwJrBiDDmKDF7cLxkAnjm_ovD1Rvwg.YbHuRqC0iRmBGfHmlP7djitDm96twBg_jur7Ej-E1pQg.PNG.jinloves00%2F2.png&type=l340_165"
-                 width="100px" height="50px" alt="동국대학교"><!--이미지 태그-->
-        </div><!--하나의 블록으로 출력되도록-->
-        <div class="content">생일: 01.12.03</div>
-        <span class="content">학번: 21</span><span class="content">(3학년)</span><!--인라인 태그-->
-    </p><p>
-        <h2>기타</h2><!--소 제목 태그-->
-        <div id="special">Github: <a href="https://github.com/namminju/study01">https://github.com/namminju/study01</a>
-        <!--링크 연결되게-->
-        <div>email: 2021111987@dgu.ac.kr</div>
+    <h1>Form으로 폼내보기</h1>
+    <form action="http://172.20.10.7/submit" method="post">
+        <div>
+            <span>이름 </span>
+            <input type="text" name="id" placeholder="이름을 입력해주세요">
+
         </div>
-    </p>
-    <p><div>푸바오 귀여워...... 뚠뚠이....</br><!--강제 뛰어쓰기-->쌍둥이 판다도 귀여워</div></p>
+        <div>
+            <span>나이</span>
+            <input type="text" name="pw" placeholder="나이를 입력해주세요">
+        </div>
+        <div>
+
+            <p>성별을 입력해 주세요.</p>
+            <span>남자 : </span><input type="radio" name="gender" value="male">
+            <span>여자 : </span><input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <p>해보고 싶은 것</p>
+            <input type="checkbox" name="travel" value = "japan" disabled> <span>번지점프</span><br>
+            <input type="checkbox" name="travel" value = "china"> <span>여행</span><br>
+            <input type="checkbox" name="travel" value = "usa"> <span>하루종일 뒹굴거리기</span><br>
+            <input type="checkbox" name="travel" value = "taiwan" disabled> <span>스카이 다이빙</span><br>
+            <input type="checkbox" name="travel" value = "uk" disabled> <span>스쿠버 다이빙</span>
+            
+            
+        </div>
+        <div>
+            <p> 목표를 정해주세요</p>
+            <select name="subject">
+                <option value="프론트엔드">프론트엔드</option>
+                <option value="백엔드">백엔드</option>
+                <option value="풀스택">풀스택</option>
+            </select>
+        </div>
+        <div>
+            <button name="btn" value="버튼">
+                <a href="./test.html" width="100px" height="50">새로고침</a>
+            </button>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="전송">
+        </div>
+
+    </form>
 </body>
 
 </html>
