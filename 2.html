@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe 내부 문서</title>
+    <title>Table은 쉽다</title>
 </head>
+<style>
+    tr:nth-child(odd){
+        background-color: aqua;
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Times New Roman';
+    }
+    tr:nth-child(even){
+        background-color: pink;
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Times New Roman';
+    }
+</style>
 <body>
-    <h1>2번 문서 입니다</h1>
     <table border="1">
-        <thead>
-            <th >이름</th>
-            <th >고향</th>
-            <th>나이</th>
-            <th>학과</th>
-        </thead>
-        <tbody>
-            <td rowspan="2">송시훈</td>
-            <td rowspan="2">김해</td>
-            <td rowspan="2">03년생</td>
-            <td rowspan="2">AI소프트웨어융합학부</td>
-        </tbody>
-        <tfoot>
-            <td rowspan="2" colspan="4">열심히 공부해요!</td>
-        </tfoot>
+        <tr> <!--한 행을 만들어주는 태그 tr-->
+            <th>첫번째 선택</th> <!--제목을 만들어주는 태그 th (h1태그처럼 사용해 주시면 됩니다.)-->
+            <th>두번째 선택</th>
+            <th>세번째 선택</th>  
+        </tr>
+        <tr>
+            <td>빨강</td> <!--데이터를 넣는 태그 td-->
+            <td>보라</td> <!--꼭 순서대로 데이터를 넣어주셔야 합니다!-->
+            <td>빨강</td>
+        </tr>
+        <tr>
+            <td>빨강</td>
+            <td>초록</td>
+            <td>빨강</td>
+        </tr>
+        <tr>
+            <td>빨강</td>
+            <td>보라</td>
+            <td>보라</td>
+        </tr>
+        <tr>
+            <td>빨강</td>
+            <td>초록</td>
+            <td>초록</td>
+        </tr>
+        <tr>
+            <td>파랑</td>
+            <td>노랑</td>
+            <td>파랑</td>
+        </tr>
+        <tr>
+            <td>파랑</td>
+            <td>핑크</td>
+            <td>파랑</td>
+        </tr>
+        <tr>
+            <td>파랑</td>
+            <td>노랑</td>
+            <td>노랑</td>
+        </tr>
+        <tr>
+            <td>파랑</td>
+            <td>핑크</td>
+            <td>핑크</td>
+        </tr>
     </table>
-    <button name="btn" value="버튼">
-        <a href="./3.html" width="500px" height="50" target="iframe">3으로 이동</a>
-    </button>
-
 </body>
 </html>
