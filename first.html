@@ -1,18 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe은 신기해</title>
+    <title>Contents</title>
 </head>
+
+<style>
+    #all{
+        margin-top: 5px;
+        width: 100%;
+        height: 1500px;
+        text-align: center;
+    }
+    #head {
+        align-items: center;
+        z-index: 998;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #topbox{
+        
+        width: 700px;
+        height: 100px;
+        z-index: 999;
+    }
+    #allbody{
+        width: 100%;
+        height: 1500px;
+        position: relative;
+        top: 100px;
+    }
+    #input{
+        width: 580px;
+        height: 70px;
+        z-index: 1000;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        bottom: 40px;
+        border: solid 5px greenyellow;
+    }
+    #naver{
+        width: 100px;
+        height: 70px;
+        z-index: 1001;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+
+    }
+    .allleft{
+        position: relative;
+        width: 74%;
+        height: 1600px;
+        float: left; 
+        margin-left: 10px;
+    }
+    .allright{
+        width: 25.2%;
+        height: 1600px;
+        float: right;
+        text-align: center;
+    }
+
+    .left{
+        border: 1px solid grey;
+        width: 49.8%;
+        height: 300px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        border: 1px solid grey;
+        width: 49.8%;
+        height: 300px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        border: 1px solid grey;
+        width: 100%;
+        height: 300px;
+        float: left;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #id{
+        width: 65%;
+        height: 30px;
+        position: relative;
+        right: 38px;
+        background-color: whitesmoke;
+    }
+    #pw{
+        width: 65%;
+        height: 30px;
+        position: relative;
+        bottom: 20px;
+        background-color: whitesmoke;
+    }
+    #bt{
+        width: 70px;
+        height: 70px;
+        background-color: greenyellow;
+        position: relative;
+        bottom: 33px;
+        font: bold 10px;
+    }
+    #ads{
+        position: relative;
+        float: left;
+        width: 91%;
+        height: 40%;
+        bottom: 30px;
+        left: 15px;
+    }
+    #undernaver{
+        width:100%;
+        height: 200px;
+    }
+    #leftbox1{
+        width:100%;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+    #leftbox2{
+        width:100%;
+        height: 500px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+    #leftbox3{
+        width:100%;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid gray;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .weather{
+        width: 95%;
+        height: 75%;
+    }
+    h2{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Times New Roman';
+    }
+    .music{
+        width: 90px;
+        height: 90px;
+    }
+    #leftbutton{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #rightbutton{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+    #middlebutton{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+    #idol{
+        display: inline;
+        position: relative;
+        top: 10px;
+    }
+    .notion{
+        display: block;
+        width: 98%;
+        height: 11.5%;
+        margin: 10px;
+        display: block;
+    }
+
+</style>
+
 <body>
-    <h1>네이버</h1>
-    <iframe src="./test.html" frameborder="10" width="500px" height="1000px" name = "ht"></iframe>
-    <iframe name ="iframe" src="./2.html" frameborder="10" width="500px" height="1000px"></iframe><br>
-    
-    
-    
-    
+    <div id="all">
+    <div id = "head">
+        <div id ="topbox">
+
+        <form action="#" method="#">    
+            <img src="https://www.thefirstmedia.net/news/photo/202309/127373_110146_2951.jpg" width="100px" height="100px" id="naver">
+            <input type="text" id = "input" placeholder="검색어를 입력하세요">
+            </form>
+        </div>
+    </div>
+    <div id ="allbody">
+        <div class="allleft">
+                <img src="https://ad.lghellovision.net/img/web/img/outside001.png"  id="undernaver">
+                <div id="leftbox1">
+                    <iframe src="./2.html" width="95%" height="400px" name = "news"></iframe>
+                </div>
+                <div id="leftbox2">
+                    <form action="#" method="#">
+                        <h2 id="idol">
+                            쇼핑과 사람들 기사
+                        </h2>
+                        <a href="./3day.html" target="shopping"><input type="button" id="leftbutton" value=">"></a>
+                        <a href="./3.html" target="shopping"><input type="button" id="middlebutton" value="O"></a>
+                        <a href="./3day2.html" target="shopping"><input type="button" id="rightbutton" value="<"></a>
+                        <iframe src="./3.html" width="95%" height="400px" name = "shopping"></iframe>
+                    </form>
+                </div>
+                <div id="leftbox3">
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-1-cb212daadfec44c7a0f546e84089bece" ><input type="button" class="notion" value="2023 2학기 웹 기초 1주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-2-056f9a45dfc24d76b6a2a65b7188d074" ><input type="button" class="notion" value="2023 2학기 웹 기초 2주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-3-77add3592a6f4ba4a4c873cd90bf0cf5" ><input type="button" class="notion" value="2023 2학기 웹 기초 3주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-4-212ea493422042639918c71e8eec37b4" ><input type="button" class="notion" value="2023 2학기 웹 기초 4주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-5-f63672fda7d848b8a13b5d9fe31a031d"><input type="button" class="notion" value="2023 2학기 웹 기초 5주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-6-0e112e45131b401dbc37438d60f90d0c" ><input type="button" class="notion" value="2023 2학기 웹 기초 6주차"></a>
+                    <a href="https://radical-alto-0ef.notion.site/2023-2-7-451228b4f817407b99652cb27b8500a1" ><input type="button" class="notion" value="2023 2학기 웹 기초 7주차"></a>
+                </div>
+        </div>
+        <div class="allright">
+            <div class="box">
+                <p>네이버에 로그인 하세요</p>
+            <form action="#" method="#">
+                <input type="text" id ="id" placeholder="아이디를 입력하세요">
+                <input type="password" id="pw" placeholder="비밀번호를 입력하세요">
+                <input type="button" id="bt" value="로그인">
+                <img src="https://ssl.pstatic.net/melona/libs/1471/1471132/a4f30a12ce0779bd9e07_20231103120727767.jpg"  id ="ads"> 
+            </form>
+        </div>
+            <div class="box">
+                <h2> 날씨를 보려면 클릭하세요</h2>
+                <a href="https://weather.naver.com/today/09140144?cpName=KMA">
+                    <img src="https://www.jejuilbo.net/news/photo/201512/3985_1477_3616.jpg" class="weather">
+                </a>
+            </div>
+            <div class="box">
+                <h2> 주식을 보고 싶으면 누르세요</h2>
+                <a href="https://finance.naver.com/sise/sise_index.nhn?code=KOSDAQ">
+                    <img src="https://i.namu.wiki/i/2mLaUbS-O228ylr8ySQZsoEP9D1fWogMrT7k9QPalA9p9q6VtAOtSKLanf0Z9r35VqlmMUuZyjGrd1CKgi4gHOGwAj-RWs0UacWBi_FJEPx1d3V5ejLSpkdznhoUTgUPuXpqfNt9IKiOFH6AReOaSA.webp" class="weather">
+                </a>
+
+            </div>
+            <div class="box">
+                <h2> 노션을 보려면 누르세요</h2>
+                <a href="https://radical-alto-0ef.notion.site/2023-2-b0f0e47e12b44dac8635e11779e03d2c">
+                    <img src="https://younho9.dev/static/32b05ec4dcdd8ca92456fc74408f32c1/40d31/hero.webp" class="weather">
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://www.melon.com/index.htm">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxntPxRivVJA7CkpVtju4wLkInktPnhOFfDZZKVYujuNVtBdNIcGmMIVcq6x_iTUi4YBZnU3CqOZj6kfkW1N7H84-&format=source&h=307" class="music">
+                </a>
+                <a href="https://music.youtube.com/">
+                    <img src="https://play-lh.googleusercontent.com/76AjYITcB0dI0sFqdQjNgXQxRMlDIswbp0BAU_O5Oob-73b6cqKggVlAiNXQAW5Bl1g" class="music">
+                </a>
+                <a href="https://www.spotify.com/kr-ko/premium/?utm_source=kr_brand_none_text&utm_medium=paidsearch&utm_campaign=alwayson_kr_kr_premiumbusiness_koreasearch+desktop+core_brand+text+exact+kr+google&gad_source=1&gclid=CjwKCAiA0syqBhBxEiwAeNx9N2GpMj7H4j4VYv00zU8ChRFoKrT3S07ynFYP6x5zQ7M7kqw5pECsABoCTtkQAvD_BwE&gclsrc=aw.ds">
+                    <img src="https://play-lh.googleusercontent.com/eN0IexSzxpUDMfFtm-OyM-nNs44Y74Q3k51bxAMhTvrTnuA4OGnTi_fodN4cl-XxDQc=w480-h960-rw" class="music">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="https://img.etnews.com/photonews/1902/1155287_20190208152015_006_0001.jpg" class="music">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="https://img.khan.co.kr/news/2023/05/22/news-p.v1.20230522.67d00406238f4f9ca9ca5f5b09cb0708_P1.webp" class="music">
+                <a href="https://www.musinsa.com/app/">
+                    <img src="https://play-lh.googleusercontent.com/tpVqfbSuwBddaawaAaJk6dN5V33fHTYimH0kayNG9H3PicmqKEuHwVtdGsrWFqT3MSc=w480-h960-rw" class="music">
+                </a>
+                <a href="https://www.daum.net/">
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVbvBW%2FbtrazMyGyla%2FdSePQtnnd96MrDqPhUt22k%2Fimg.png" class="music">
+                </a>
+                <a href="https://www.google.co.kr/?hl=ko">
+                    <img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" class="music">
+                </a>
+                <a href="https://www.kbs.co.kr/">
+                    <img src="https://play-lh.googleusercontent.com/gGmIE5gtfniYCiDjomvILsTw1ix7_XZ3HDYoH9W1x3xjklu7_XrIYri2U1XSBGjErbs" class="music">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>

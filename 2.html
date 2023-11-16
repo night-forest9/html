@@ -7,66 +7,69 @@
     <title>Table은 쉽다</title>
 </head>
 <style>
-    tr:nth-child(odd){
-        background-color: aqua;
-        font-size: 2em;
-        font-style: italic;
+    .text{
+        width: 300px;
+        height: 50px;
         font-family: 'Times New Roman';
     }
-    tr:nth-child(even){
-        background-color: pink;
-        font-size: 2em;
-        font-style: italic;
+    tr{
+        width: 300px;
+        height: 90px;
         font-family: 'Times New Roman';
+        font-size: 2em; 
+        text-align: center;
+    }
+    #newstable{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link{
+        width: 250px;
+        height: 60px;
     }
 </style>
 <body>
-    <table border="1">
+    <table border=1 id ="newstable">
         <tr> <!--한 행을 만들어주는 태그 tr-->
-            <th>첫번째 선택</th> <!--제목을 만들어주는 태그 th (h1태그처럼 사용해 주시면 됩니다.)-->
-            <th>두번째 선택</th>
-            <th>세번째 선택</th>  
+            <th class="text">뉴스</th> <!--제목을 만들어주는 태그 th (h1태그처럼 사용해 주시면 됩니다.)-->
+            <th class="text">뉴스</th>
+            <th class="text">뉴스</th>  
         </tr>
         <tr>
-            <td>빨강</td> <!--데이터를 넣는 태그 td-->
-            <td>보라</td> <!--꼭 순서대로 데이터를 넣어주셔야 합니다!-->
-            <td>빨강</td>
+            <td ><a href="https://www.joongang.co.kr/">
+                <img src="https://image.rocketpunch.com/company/10413/joongang-ilbo_logo.jpg?s=400x400&t=inside" class="link">
+            </a></td> <!--데이터를 넣는 태그 td-->
+            <td ><a href="https://www.segye.com/">
+                <img src="http://m.journalist.or.kr/data/photos/20221213/art_1670926964.jpg" class="link">
+            </a></td> <!--꼭 순서대로 데이터를 넣어주셔야 합니다!-->
+            <td ><a href="https://www.mbn.co.kr/">
+                <img src="https://img.hankyung.com/photo/202207/AKR20220708157200005_01_i_P4.jpg" class="link">
+            </a></td>
         </tr>
         <tr>
-            <td>빨강</td>
-            <td>초록</td>
-            <td>빨강</td>
+            <td ><a href="https://www.dnews.co.kr/">
+                <img src="https://image.dnews.co.kr/photo/photo/2020/09/23/202009231658143290336-2-148687.jpg" class="link">
+            </a></td>
+            <td ><a href="https://www.sportsseoul.com/">
+                <img src="https://i.namu.wiki/i/QOEAewkCgCa7s8UOnSIazxKzFHzc_aZcOi87HX_FYG0Bs5ynq-icyCAfEeEOXKf0XEIAU1kjpO9FJvKEiziZWHbSVSRygEMScheqAdHSbN7yT8mscYmEaf7FvugdkdhxAErR-pbVwzTd_OHB97u-dA.webp" class="link">
+            </a></td>
+            <td><a href="https://www.mk.co.kr/">
+                <img src="https://img.mk.co.kr/company/maeil/ci_05.jpg" class="link">
+            </a></td>
         </tr>
         <tr>
-            <td>빨강</td>
-            <td>보라</td>
-            <td>보라</td>
+            <td><a href="https://www.sbs.co.kr/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/SBS_Korea_Logo_%28Word_Only%29.svg/225px-SBS_Korea_Logo_%28Word_Only%29.svg.png" class="link">
+            </a></td>
+            <td><a href="https://www.donga.com/">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRNbWs%2Fbtqw3PsQbkA%2FX3QM4QLJ4y1CqW66ydxWoK%2Fimg.jpg" class="link">
+            </a></td>
+            <td><a href="https://www.chosun.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/TV_Chosun_Logo_%28English%29.svg" class="link">
+            </a></td>
         </tr>
-        <tr>
-            <td>빨강</td>
-            <td>초록</td>
-            <td>초록</td>
-        </tr>
-        <tr>
-            <td>파랑</td>
-            <td>노랑</td>
-            <td>파랑</td>
-        </tr>
-        <tr>
-            <td>파랑</td>
-            <td>핑크</td>
-            <td>파랑</td>
-        </tr>
-        <tr>
-            <td>파랑</td>
-            <td>노랑</td>
-            <td>노랑</td>
-        </tr>
-        <tr>
-            <td>파랑</td>
-            <td>핑크</td>
-            <td>핑크</td>
-        </tr>
+        
     </table>
 </body>
 </html>
